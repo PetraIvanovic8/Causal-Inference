@@ -1,1 +1,38 @@
-# Causal-Inference
+# Causal Inference
+
+This repository is a detailed documentation of the most relevant work done in an advanced NYU Data Science course called ‘Causal Inference’. This course provided me with the knowledge necessary for conducting an in-depth exploration of causation, teaching us to understand the relationship between cause and effect through a rigorous curriculum. <br>
+
+The aim of this course was to gain an understanding of different theoretical concepts that we then applied to real datasets to both gain experience in R and enhance our understanding of causal inference techniques and methods.
+## Concepts learned and utilized throughout the course:
+Some of the concepts learned in this course were:
+- **Potential Outcomes Framework** which is a foundational concept for causal inference, helping us to conceptualize causality in terms of potential outcomes under different scenarios.
+- **Randomized Controlled Trials (RCTs)** which is crucial for experimental design, allowing for the estimation of causal effects by randomly assigning subjects to treatment and control groups and with that eliminating bias.
+- **Observational Studies and Matching Methods** which are techniques for estimating causal effects when RCTs are not feasible (which is the case in many real life scenarios), including propensity score matching to balance treatment and control groups on observed covariates.
+- **Instrumental Variables (IV)** which is a method used to address endogeneity by leveraging variables that influence the treatment but are not directly related to the outcome.
+- **Regression Discontinuity Design (RDD)** which is a quasi-experimental technique that identifies causal effects at the cutoff points of assignment variables.
+- **Difference-in-Differences (DiD)** which is a method that compares the pre-treatment and post-treatment changes in outcomes between treated and control groups to estimate causal effects.<br>
+
+To sum up, the course covered many topics such as designing perfect experiments, understanding preconditions for causality, and addressing threats to validity in less-than-perfect experiments. I also learned about quasi-experiments, regression discontinuities, differences in differences, and contemporary advanced approaches.
+
+## Contents of This Repository
+
+This repository contains the assignments and exams that covered the wide range of topics taught in the course where we got to apply the previously mentioned concepts to different real-life scenarios and problems. Each folder within the repository is dedicated to a specific assignment or exam and contains detailed documentation, code, and analysis.
+Each folder contains the assignment or exam in pdf and Rmd format as well as the data used in the assignment (if applicable).
+### [Assignment 1](https://github.com/PetraIvanovic8/Causal-Inference/tree/ff62d322d3ca53a30a87f3f66d0c9acb62e2b15f/Assignment%201)
+This assignment  explored the fundamentals of causal inference through a mix of theoretical questions and applied data analysis using R. Key topics included the fundamental problem of causal inference, the importance of experiments, concepts like ignorability and the Stable Unit Treatment Value Assumption (SUTVA). <br>
+The applied portion utilized data from the STAR project to examine the impact of class size on educational outcomes, employing techniques such as data manipulation with dplyr, descriptive statistics, and inferential analysis to assess class size effects on test scores and graduation rates.
+
+### [Assignment 2](https://github.com/PetraIvanovic8/Causal-Inference/tree/ff62d322d3ca53a30a87f3f66d0c9acb62e2b15f/Assignment%202)
+Assignment 2 investigated the impact of Truth and Reconciliation Commissions (TRCs) on reducing racial hostilities in South Africa, using survey data to analyze respondents' racial attitudes. Techniques employed included estimating average treatment effects (ATE) using regression with robust standard errors, balance tests to compare exposed and unexposed respondents, propensity score estimation for inverse probability treatment weighting (IPTW), and bootstrap methods for estimating standard errors. Different matching algorithms (nearest neighbor, exact, and coarsened exact matching) were applied to estimate the average treatment effect on the treated (ATT), providing a comprehensive analysis of the TRCs' effectiveness in fostering racial understanding.
+
+### [Assignment 3](https://github.com/PetraIvanovic8/Causal-Inference/tree/ff62d322d3ca53a30a87f3f66d0c9acb62e2b15f/Assignment%203)
+Assignment 3 focused on analyzing the effects of U.S. military and narcotics aid on paramilitary attacks in Colombian municipalities. The assignment utilized two-way fixed effects models to estimate average treatment effects, incorporating municipality and year fixed effects, and clustering standard errors at the municipality level. The techniques I used included regression analysis with robust standard errors and the interpretation of coefficients and confidence intervals. This provided insights into how the presence of military bases and the levels of U.S. aid influenced the frequency of paramilitary attacks, adjusting for population size and other covariates.
+
+### [Assignment 4](https://github.com/PetraIvanovic8/Causal-Inference/tree/ff62d322d3ca53a30a87f3f66d0c9acb62e2b15f/Assignment%204)
+Assignment 4 analyzed the effects of Medicaid enrollment on health outcomes using data from the Oregon Health Insurance Experiment. This assignment applied instrumental variables (IV) analysis to address endogeneity issues that arose from non-random enrollment into Medicaid. Techniques I used included intent-to-treat (ITT) analysis, naive OLS regression, and IV estimation using two-stage least squares (2SLS). Outcomes of interest were elevated blood pressure, depression, catastrophic medical expenditures, and unmet medical needs. This comprehensive approach demonstrated the causal impacts of Medicaid enrollment, contrasting naive OLS estimates with more robust IV estimates to reveal the true effects of Medicaid on health outcomes.
+
+### [Midterm Exam](https://github.com/PetraIvanovic8/Causal-Inference/tree/ff62d322d3ca53a30a87f3f66d0c9acb62e2b15f/Causal%20Inference%20Midterm)
+The midterm exam covered various topics in causal inference, including experimental design, statistical analysis, and critical thinking about causality. Questions ranged from practical applications, such as analyzing promotional strategies in a cafe, to theoretical concepts like the impact of class size on educational outcomes. Techniques I used included difference-in-means estimation, instrumental variable analysis, and Directed Acyclic Graphs (DAGs) interpretation. The exam tested the ability to apply causal inference principles to both hypothetical scenarios and real-world data, emphasizing the understanding and manipulation of causal relationships, statistical reasoning, and ethical considerations in experimental design.
+
+### [Final Exam](https://github.com/PetraIvanovic8/Causal-Inference/tree/ff62d322d3ca53a30a87f3f66d0c9acb62e2b15f/Causal%20Inference%20Final)
+The final exam focused on applying causal inference methodologies to assess the impact of family income on college enrollment using survey data. It involved constructing a Directed Acyclic Graph (DAG), choosing and justifying a methodology under conditional ignorability (Propensity Score Matching was selected), and calculating causal effects with robust standard errors. The exam tested our skills in handling observational data, addressing confounders, and interpreting the statistical and substantive significance of the findings, putting an emphasis on a comprehensive understanding of causal inference principles and their application to real-world scenarios.

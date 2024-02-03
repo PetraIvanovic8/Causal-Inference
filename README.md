@@ -14,7 +14,7 @@ Some of the concepts learned in this course were:
 
 To sum up, the course covered many topics such as designing perfect experiments, understanding preconditions for causality, and addressing threats to validity in less-than-perfect experiments. I also learned about quasi-experiments, regression discontinuities, differences in differences, and contemporary advanced approaches.
 
-## Contents of This Repository
+## Contents of this Repository
 
 This repository contains the assignments and exams that covered the wide range of topics taught in the course where we got to apply the previously mentioned concepts to different real-life scenarios and problems. Each folder within the repository is dedicated to a specific assignment or exam and contains detailed documentation, code, and analysis.
 Each folder contains the assignment or exam in pdf and Rmd format as well as the data used in the assignment (if applicable).
